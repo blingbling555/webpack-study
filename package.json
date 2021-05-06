@@ -19,6 +19,12 @@
   },
   "homepage": "https://github.com/blingbling555/webpack-study#readme",
   "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   }

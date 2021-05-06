@@ -11,5 +11,13 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: '[name].js' // 使用占位符来区分
     },
-    mode: 'production'
+    mode: 'production',
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: 'babel-loader'
+            }
+        ]
+    }
 };
