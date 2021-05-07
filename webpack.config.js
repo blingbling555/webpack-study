@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-
+const webpack = require('webpack')
 module.exports = {
     entry: {
         index: './src/index.js',
@@ -11,7 +11,7 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: '[name].js' // 使用占位符来区分
     },
-    mode: 'production',
+    mode: 'development',
     module: {
         rules: [
             {
@@ -42,5 +42,12 @@ module.exports = {
                 use: 'file-loader'
             }
         ]
+    },
+    plugins: [
+        new webpack.HotModuleReplacementPlugin() //webpack.HotModuleReplacementPlugin  没有必要加，官网文档说配置了 hot: true 会自动引入这个 plugin。
+    ],
+    devServer: {
+        contentBase: './dist',
+        hot: true
     }
 };

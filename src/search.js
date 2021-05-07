@@ -1,5 +1,8 @@
 'use strict';
-
+if(module.hot)
+{
+    module.hot.accept();
+}
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './search1.css';
@@ -10,7 +13,7 @@ class Search extends React.Component {
     render() {
         return <div className="search-text">
             <img src={logo}></img>
-            搜索文字的内容121212121444
+            搜索文字的内容
         </div>;
     }
 }
