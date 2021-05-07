@@ -10,7 +10,7 @@ class Search extends React.Component {
     render() {
         return <div className="search-text">
             <img src={logo}></img>
-            搜索文字的内容
+            搜索文字的内容121212121444
         </div>;
     }
 }
