@@ -30,6 +30,7 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
+                    'postcss-loader',
                     'less-loader'
                 ]
             },
@@ -94,6 +95,5 @@ module.exports = {
             }
         }),
         new CleanWebpackPlugin()
-    ],
-
+    ]
 };
