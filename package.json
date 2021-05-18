@@ -21,6 +21,7 @@
   "homepage": "https://github.com/blingbling555/webpack-study#readme",
   "devDependencies": {
     "@babel/core": "^7.14.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@babel/preset-env": "^7.14.1",
     "@babel/preset-react": "^7.13.13",
     "autoprefixer": "^9.5.1",
